@@ -1,0 +1,120 @@
+/* ==========================================
+   WordPress Logo & Site Branding
+========================================== */
+
+/* Logo container */
+.custom-logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+/* Logo image */
+.custom-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0;
+}
+
+/* Site title */
+.site-title,
+.site-branding .site-title,
+.custom-logo-link + .site-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Remove unwanted spacing */
+#siteHeader .custom-logo-link,
+#siteHeader .custom-logo,
+#siteHeader a {
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   Tablet
+========================================== */
+
+@media (max-width: 768px) {
+
+    .custom-logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .custom-logo-link {
+        gap: 8px;
+    }
+
+    .site-title,
+    .site-branding .site-title {
+        font-size: 1.25rem;
+    }
+
+}
+
+/* ==========================================
+   Mobile
+========================================== */
+
+@media (max-width: 640px) {
+
+    .custom-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    .custom-logo-link {
+        gap: 6px;
+        max-width: calc(100vw - 80px);
+    }
+
+    .site-title,
+    .site-branding .site-title,
+    .custom-logo-link + .site-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        max-width: 160px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+}
+
+/* ==========================================
+   Small Phones
+========================================== */
+
+@media (max-width: 380px) {
+
+    .custom-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-title,
+    .site-branding .site-title,
+    .custom-logo-link + .site-title {
+        font-size: 0.95rem;
+        max-width: 120px;
+    }
+
+}
